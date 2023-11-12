@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #23003E;
+      color: white;
+      font-family: 'Alata', sans-serif;
+
+    }
+  
+    .half-circle {
+      width: 100vh; 
+      height: 100vh;
+      background-image: url('photo_2023-10-18_16-04-02.jpg'); 
+      background-size: cover;
+      background-position: center;
+      border-top-right-radius: 50%; 
+      border-bottom-right-radius: 50%; 
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+    }
+
+    .home-button {
+  position: absolute;
+  top: 25px;
+  left: 45%; /* Adjusted position for equal spacing */
+  transform: translateX(-50%, -50%);
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  
+    }
+
+.about-button {
+  position: absolute;
+  top: 25px;
+  left: 61%; /* Adjusted position for equal spacing */
+  transform: translateX(-50%, -50%);
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    } 
+
+.resume-button {
+  position: absolute;
+  top: 25px;
+  left: 77%; /* Adjusted position for equal spacing */
+  transform: translateX(-50%, -50%);
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    }
+
+.education-button {
+  position: absolute;
+  top: 25px;
+  left: 93%; /* Adjusted position for equal spacing */
+  transform: translateX(-50%, -50%);
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    }
+
+.Skills-button {
+  position: absolute;
+  top: 25px;
+  left: 109%; /* Adjusted position for equal spacing */
+  transform: translateX(-50%, -50%);
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+
+   }
+
+.rectangle {
+  position: absolute;
+  top: 25px; /* Y position */
+  left: 125%; /* Position for the rectangle with additional space */
+  width: 101px; /* Width */
+  height: 33px; /* Height */
+  border-radius: 12px; /* Corner radius */
+  background-color: #540691; /* Change color as needed */
+  transform: rotate(0deg); /* Rotation */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+
+   }
+
+    .home-button:hover,
+    .about-button:hover,
+    .resume-button:hover,
+    .education-button:hover,
+    .Skills-button:hover {
+        background-color: #540691; /* Change to the desired color on hover */
+        color: white; /* Change to the desired text color on hover */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Add a smooth transition effect */
+    }
+
+
+    
+   .home-button,
+    .about-button,
+    .resume-button,
+    .education-button,
+    .Skills-button,
+    .third-text,
+    .rectangle-text {
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Adding drop shadow */
+      -webkit-text-stroke: 1px black; /* Adding stroke to the text */
+    }
+
+
+    .centered-text {
+      position: absolute;
+      font-size: 48px;
+      font-family: 'Alata', sans-serif;
+      
+    }
+
+    /* Adjust the top and left properties to position the text */
+    /* These values center the text initially */
+    .centered-text--custom {
+      top: 20%; /* Adjust these values for desired vertical positioning */
+      left: 60%; /* Adjust these values for desired horizontal positioning */
+      transform: translate(-50%, -50%);
+    }
+
+
+
+    .second-text {
+      position: absolute;
+      font-size: 48px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 28%;
+      left: 73.5%;
+      text-align: center;
+      white-space: nowrap;
+      
+
+    }
+   
+    .third-text {
+      position: absolute;
+      font-size: 32px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 35%;
+      left: 69.5%;
+      text-align: center;
+      white-space: nowrap;
+
+    }
+
+    .forth-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 49%;
+      left: 81%;
+      text-align: center;
+      white-space: nowrap;
+
+    }
+
+
+    .fivth-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 53%;
+      left: 81%;
+      text-align: center;
+      white-space: nowrap;
+
+
+    }
+
+
+    .sixth-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 57%;
+      left: 67%;
+      text-align: center;
+      white-space: nowrap;
+
+
+    }
+
+    .seventh-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 67%;
+      left: 81%;
+      text-align: center;
+      white-space: nowrap;
+    
+
+    }
+
+    .eighth-text{
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 71%;
+      left: 80.5%;
+      text-align: center;
+      white-space: nowrap;
+
+    }
+
+    .nineth-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 80%;
+      left: 81%;
+      text-align: center;
+      white-space: nowrap;
+
+
+    }
+
+    .tenth-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 84%;
+      left: 81%;
+      text-align: center;
+      white-space: nowrap;
+
+    }
+
+    .eleven-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 88%;
+      left: 80.8%;
+      text-align: center;
+      white-space: nowrap;
+
+
+    }
+
+    .twelve-text {
+
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 92%;
+      left: 71%;
+      text-align: center;
+      white-space: nowrap;
+
+    }
+
+
+    .oval-shape {
+      width: 150px; /* Adjust the width */
+      height: 200px; /* Adjust the height */
+      background-color: #540691; /* Change color as needed */
+      border-radius: 50%; /* To create an oval shape */
+      position: absolute;
+      top: 25.5%; /* Adjust these values to position the shape vertically */
+      left: 129%; /* Adjust these values to position the shape horizontally */
+      transform: translate(-50%, -50%);
+      z-index: 1; /* Ensure it's above other elements */
+      background-image: url('photo_2023-11-08_22-22-05.jpg'); /* Replace 'your-image-url.jpg' with your image */
+      background-size: cover;
+      background-position: center;
+    }
+
+
+
+
+   
+
+</style>
+</head>
+<body>
+<div class="half-circle"></div>
+<div class="centered-text centered-text--custom">Hi!</div>
+<div class="second-text">I’m Tenzin Namgay</div>
+<div class="third-text">Software engineering</div>
+<div class="forth-text"> an intermediate web page designer who is actively engaged in the ongoing process of learning.</div>
+<div class="fivth-text">Beyond web design, I am also deeply interested in learning coding and data science, both of which </div>
+<div class="sixth-text">captivate my curiosity.</div>
+<div class="seventh-text">I am currently in my first year of studying Software Engineering at Gedu (GCBS) under the </div>
+<div class="eighth-text">College of Science and Technology, located in Chukkha. </div>
+<div class="nineth-text">I chose software engineering as my course because I have a keen interest in creating  </div>
+<div class="tenth-text"> the best websites. Additionally, I'm also fascinated by AI and blockchain, and I believe that software </div>
+<div class="eleven-text ">engineering offers a wide range of opportunities and a promising future, making </div>
+<div class="twelve-text "> it an ideal choice for my studies.</div>
+
+<a href="web3.html" class="home-button">Home</a>
+<a href="web4.html" class="education-button">Education</a>
+<a href="web7.html" class="resume-button">Resume</a>
+<a href="web6.html" class="Skills-button">Skills</a>
+
+
+    <!-- Contact button -->
+<a href="web8.html" class="rectangle">Contact</a>
+ 
+<!-- Oval shape -->
+<div class="oval-shape"></div>
+<div class="about-button">About me</div>
+</body>
+</html>

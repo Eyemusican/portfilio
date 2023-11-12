@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #23003E;
+      color: white;
+      font-family: 'Alata', sans-serif;
+
+    }
+  
+    .half-circle {
+      width: 100vh; 
+      height: 100vh;
+      background-image: url('photo_2023-10-18_16-04-02.jpg'); 
+      background-size: cover;
+      background-position: center;
+      border-top-right-radius: 50%; 
+      border-bottom-right-radius: 50%; 
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+    }
+
+  .home-button {
+  position: absolute;
+  top: 25px;
+  left: 45%; /* Adjusted position for equal spacing */
+  transform: translateX(-50%, -50%);
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  
+    }
+
+.about-button {
+  position: absolute;
+  top: 25px;
+  left: 61%; /* Adjusted position for equal spacing */
+  transform: translateX(-50%, -50%);
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    } 
+
+.resume-button {
+  position: absolute;
+  top: 25px;
+  left: 77%; /* Adjusted position for equal spacing */
+  transform: translateX(-50%, -50%);
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    }
+
+.education-button {
+  position: absolute;
+  top: 25px;
+  left: 93%; /* Adjusted position for equal spacing */
+  transform: translateX(-50%, -50%);
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    }
+
+.Skills-button {
+  position: absolute;
+  top: 25px;
+  left: 109%; /* Adjusted position for equal spacing */
+  transform: translateX(-50%, -50%);
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+
+   }
+
+.rectangle {
+  position: absolute;
+  top: 25px; /* Y position */
+  left: 125%; /* Position for the rectangle with additional space */
+  width: 101px; /* Width */
+  height: 33px; /* Height */
+  border-radius: 12px; /* Corner radius */
+  background-color: #540691; /* Change color as needed */
+  transform: rotate(0deg); /* Rotation */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+
+   }
+
+   .home-button:hover,
+    .about-button:hover,
+    .resume-button:hover,
+    .education-button:hover,
+    .Skills-button:hover {
+        background-color: #540691; /* Change to the desired color on hover */
+        color: white; /* Change to the desired text color on hover */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Add a smooth transition effect */
+    }
+
+
+    
+   .home-button,
+    .about-button,
+    .resume-button,
+    .education-button,
+    .Skills-button,
+    .rectangle-text {
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Adding drop shadow */
+      -webkit-text-stroke: 1px black; /* Adding stroke to the text */
+    }
+
+    .emojis {
+      position: absolute;
+      top: 35%; /* Adjust top value for vertical position */
+      left: 88%; /* Adjust left value for horizontal position */
+      transform: translate(-50%, -50%);
+      font-size: 72px; /* Adjust the size of the emoji */
+      cursor: pointer;
+    }
+
+    .emojis-second {
+      position: absolute;
+      top: 35%; /* Adjust top value for vertical position */
+      left: 95%; /* Adjust left value for horizontal position */
+      transform: translate(-50%, -50%);
+      font-size: 72px; /* Adjust the size of the emoji */
+      cursor: pointer;
+    }
+
+    .second-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 45%;
+      left: 79%;
+      text-align: center;
+      white-space: nowrap;
+      
+
+    }
+   
+    .third-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 82%;
+      left: 79%;
+      text-align: center;
+      white-space: nowrap;
+
+    }
+
+    .forth-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 50%;
+      left: 79%;
+      text-align: center;
+      white-space: nowrap;
+
+    }
+
+
+    .fivth-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 55%;
+      left: 79%;
+      text-align: center;
+      white-space: nowrap;
+
+
+    }
+
+
+    .sixth-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 60%;
+      left: 79%;
+      text-align: center;
+      white-space: nowrap;
+
+
+    }
+
+    .seventh-text {
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 65%;
+      left: 70.5%;
+      text-align: center;
+      white-space: nowrap;
+    
+
+    }
+
+    .eighth-text{
+      position: absolute;
+      font-size: 24px;
+      font-family: 'Alata', sans-serif;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 608px;
+      top: 87%;
+      left: 65%;
+      text-align: center;
+      white-space: nowrap;
+
+    }
+
+
+</style>
+</head>
+<body>
+<div class="half-circle"></div>
+<div class="second-text">After my high school graduation, I enrolled in the College of Science and Technology to pursue </div>
+<div class="third-text">I have been studying software engineering for three months now, and I am genuinely </div>
+<div class="forth-text"> a career as a programmer, specifically focusing on software engineering.</div>
+<div class="fivth-text">This course offers a promising future, and it has involved numerous assignments,including tasks </div>
+<div class="sixth-text">such as user persona design, web page design, learning Python automation,and machine learning,</div>
+<div class="seventh-text">all provided by our dedicated faculty.</div>
+<div class="eighth-text">interested in this field.</div>
+
+
+<a href="web3.html" class="home-button">Home</a>
+<a href="web7.html" class="resume-button">Resume</a>
+<a href="web6.html" class="Skills-button">Skills</a>
+<a href="web5.html" class="about-button">About me</a>
+
+
+    <!-- Contact button -->
+<a href="web8.html" class="rectangle">Contact</a>
+ <!-- Education button -->
+ <div class="education-button">Education</div>
+ <!-- Emoji using Font Awesome -->
+<div class="emojis">
+    <i class="fas fa-graduation-cap"></i>
+</div> 
+<!-- Another Emoji using Font Awesome -->
+<div class="emojis-second">
+    <i class="fas fa-award"></i>
+</div>
+    
+</body>
+</html>
+
+
+
+

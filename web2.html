@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23003E;
+    color: white;
+    font-family: 'Alata', sans-serif;
+    
+  }
+
+  .half-circle {
+    width: 60vh; 
+    height: 100vh;
+    background-image: url('photo_2023-10-18_14-54-45.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 50%; 
+    border-bottom-right-radius: 50%; 
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .square {
+    width: 250px; 
+    height: 350px; 
+    background-image: url('AI.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin-left: calc(30vh - 100px);
+    position: relative;
+    top: -20px;
+
+  }
+
+  .text-below {
+    font-weight: bold; /* Apply bold font */
+    text-align: center; /* Center the text */
+    position: absolute;
+    bottom: 0px; 
+    width: 100%;
+    font-size: 64px; /* Set font size to 64 */
+    font-family: 'Alata', sans-serif;
+    left: 70px
+
+  }
+
+  .icon {
+    color: white;
+    margin-left: 10px;
+  }
+
+  .icon-link {
+    text-decoration: none; /* Remove underline from the link */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    color: white; /* Set the link color */
+  }
+
+
+</style>
+</head>
+<body>
+  <div class="half-circle"></div>
+  <div class="square"></div>
+  <div class="text-below">
+    <h3>
+      Let's get started 
+      <a class="icon-link" href="web3.html">
+        <i class="icon fas fa-arrow-right"></i>
+      </a>
+    </h3>
+</div>
+</body>
+</html>
